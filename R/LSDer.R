@@ -8,7 +8,7 @@
 #' @examples
 
 LSDer<-function(model,term,comps=NULL,level=0.95){
-  if(class(model)=="merMod"|class(model)=="merModLmerTest""|class(model)=="lmerModLmerTest"){){
+  if(class(model)=="merMod"|class(model)=="merModLmerTest"|class(model)=="lmerModLmerTest"){){
     if(!term%in%colnames(model@frame))
     {stop(paste("No variable called",term,"found in model",deparse(substitute(model))))}
     if(is.null(comps)){
