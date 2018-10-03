@@ -9,7 +9,7 @@ CVer<-function(model){
    
     GM<-mean(model@frame[,1])
     MS<-sigma(model)**2
-return(100*sqrt(MS)/GM)
+return(paste(round(100*sqrt(MS)/GM,2),"%",sep=""))
   }
   else(stop("model not of class merMod or merModLmerTest"))
 }
