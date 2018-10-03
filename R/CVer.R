@@ -5,7 +5,7 @@
 #' @examples
 
 CVer<-function(model){
-  if(class(model)=="merMod"|class(model)=="merModLmerTest"){
+  if(class(model)=="merMod"|class(model)=="merModLmerTest"|class(model)=="lmerMod"|class(model)=="lmerModLmerTest"){
    
     GM<-mean(model@frame[,1])
     MS<-sigma(model)**2
