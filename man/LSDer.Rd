@@ -2,7 +2,7 @@
 % Please edit documentation in R/LSDer.R
 \name{LSDer}
 \alias{LSDer}
-\title{Calculating Fishers LSD value from mixed model}
+\title{Calculating Fishers LSD value from a mixed effects regression model fitted using \code{lme4}}
 \usage{
 LSDer(model, term, comps = NULL, level = 0.95)
 }
@@ -16,7 +16,7 @@ LSDer(model, term, comps = NULL, level = 0.95)
 \item{level}{confidence level for LSD}
 }
 \description{
-Calculating Fishers LSD value from mixed model
+Calculating Fishers LSD value from a mixed effects regression model fitted using \code{lme4}
 }
 \keyword{LSD}
 \keyword{lmer}
